@@ -1,0 +1,241 @@
+@font-face {
+  font-family: Gilroy;
+  src: url("Gilroy-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Gilroy, sans-serif;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// header
+.header {
+  & .container {
+    padding: 30px 0;
+    border-bottom: 1px solid #828282;
+  }
+
+  &-nav {
+    &.flex {
+      justify-content: space-between;
+    }
+
+    &__li {
+      transition: 0.2s;
+      cursor: pointer;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// section-first
+
+.section-first {
+  padding-bottom: 100px;
+
+  & .container {
+    padding: 30px 0 0;
+
+    & .flex {
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: bold;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+  }
+
+  &__language {
+    font-size: 16px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+  }
+
+  &__image {
+    margin-top: 50px;
+  }
+}
+
+// section-about
+
+.section-about {
+  background: #f6f6f6;
+  text-align: center;
+
+  & .container {
+    padding: 100px 0;
+  }
+
+  &__title {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+// section-skills
+
+.section-skills {
+  text-align: center;
+
+  & .container {
+    padding: 100px 0;
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    margin-bottom: 75px;
+  }
+
+  &-item {
+    margin-right: 75px;
+    text-align: center;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &__img {
+      margin-bottom: 25px;
+    }
+
+    &__title {
+      color: #828282;
+      margin-bottom: 25px;
+    }
+
+    &__star {
+      width: 25px;
+      height: 25px;
+      margin-right: 10px;
+      background: url("../image/Star.svg") no-repeat center center / cover;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      &[data-color="black"] {
+        background: url("../image/Star-black.svg") no-repeat center center /
+          cover;
+      }
+    }
+  }
+}
+
+// section-portfolio
+
+.section-portfolio {
+  background: #f6f6f6;
+  text-align: center;
+
+  & .container {
+    padding: 100px 0;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+
+  &-item {
+    margin-bottom: 75px;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &__img {
+      margin-bottom: 25px;
+    }
+
+    &__link {
+      font-size: 18px;
+      color: black;
+    }
+  }
+}
+
+// section-contacts
+
+.section-contacts {
+  text-align: center;
+
+  & .container {
+    padding: 100px 0;
+  }
+
+  &__title {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+  &__btn {
+    margin-bottom: 75px;
+    font-size: 18px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    box-shadow: 0 0 5px black;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+  }
+
+  &__link {
+    margin-right: 50px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &-footer__text {
+    font-size: 14px;
+    margin-top: 50px;
+    color: #828282;
+  }
+}

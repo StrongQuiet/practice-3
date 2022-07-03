@@ -1,0 +1,246 @@
+@font-face {
+  font-family: Gilroy;
+  src: url("Gilroy-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Gilroy, sans-serif;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .container {
+  padding: 30px 0;
+  border-bottom: 1px solid #828282;
+}
+
+.header-nav.flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-nav__li {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.header-nav__li:hover {
+  font-weight: bold;
+}
+
+.section-first {
+  padding-bottom: 100px;
+}
+
+.section-first .container {
+  padding: 30px 0 0;
+}
+
+.section-first .container .flex {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-first__title {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.section-first__subtitle {
+  font-size: 18px;
+}
+
+.section-first__language {
+  font-size: 16px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.section-first__image {
+  margin-top: 50px;
+}
+
+.section-about {
+  background: #f6f6f6;
+  text-align: center;
+}
+
+.section-about .container {
+  padding: 100px 0;
+}
+
+.section-about__title {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.section-about__subtitle {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.section-about__subtitle:last-child {
+  margin: 0;
+}
+
+.section-skills {
+  text-align: center;
+}
+
+.section-skills .container {
+  padding: 100px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-skills__title {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.section-skills__subtitle {
+  font-size: 18px;
+  margin-bottom: 75px;
+}
+
+.section-skills-item {
+  margin-right: 75px;
+  text-align: center;
+}
+
+.section-skills-item:last-child {
+  margin: 0;
+}
+
+.section-skills-item__img {
+  margin-bottom: 25px;
+}
+
+.section-skills-item__title {
+  color: #828282;
+  margin-bottom: 25px;
+}
+
+.section-skills-item__star {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  background: url("../image/Star.svg") no-repeat center center/cover;
+}
+
+.section-skills-item__star:last-child {
+  margin: 0;
+}
+
+.section-skills-item__star[data-color="black"] {
+  background: url("../image/Star-black.svg") no-repeat center center/cover;
+}
+
+.section-portfolio {
+  background: #f6f6f6;
+  text-align: center;
+}
+
+.section-portfolio .container {
+  padding: 100px 0;
+}
+
+.section-portfolio__title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.section-portfolio-item {
+  margin-bottom: 75px;
+}
+
+.section-portfolio-item:last-child {
+  margin: 0;
+}
+
+.section-portfolio-item__img {
+  margin-bottom: 25px;
+}
+
+.section-portfolio-item__link {
+  font-size: 18px;
+  color: black;
+}
+
+.section-contacts {
+  text-align: center;
+}
+
+.section-contacts .container {
+  padding: 100px 0;
+}
+
+.section-contacts__title {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.section-contacts__subtitle {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.section-contacts__btn {
+  margin-bottom: 75px;
+  font-size: 18px;
+  border-radius: 50px;
+  padding: 10px 20px;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.section-contacts__link {
+  margin-right: 50px;
+}
+
+.section-contacts__link:last-child {
+  margin: 0;
+}
+
+.section-contacts-footer__text {
+  font-size: 14px;
+  margin-top: 50px;
+  color: #828282;
+}
+/*# sourceMappingURL=main.css.map */
